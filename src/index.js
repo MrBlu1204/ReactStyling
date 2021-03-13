@@ -1,31 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 
-let greetings;
-const customStyle = {
-  color: ""
-};
-
-const date = new Date();
-const currentTime = date.getHours();
-
-if (currentTime < 12) {
-  greetings = "Good Morning";
-  customStyle.color = "red";
-} else if (currentTime < 18) {
-  greetings = "Good Afternoon";
-  customStyle.color = "green";
-} else {
-  greetings = "Good Night";
-  customStyle.color = "blue";
-}
-
-ReactDOM.render(
-  <h1 className="heading" style={customStyle}>
-    {greetings}
-  </h1>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 //Create a React app from scratch.
 //Show a single h1 that says "Good morning" if between midnight and 12PM.
