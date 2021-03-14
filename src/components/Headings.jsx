@@ -1,6 +1,6 @@
 import React from "react";
-import Greetings from "./Greetings";
-import customStyle from "./Styles";
+import Greetings, { customStyle } from "./Greetings";
+//import customStyle from "./Styles";
 //import Time from "./Time";
 
 //const time = <Time />;
@@ -17,7 +17,7 @@ import customStyle from "./Styles";
 //  customStyle.color = "blue";
 //}
 
-console.log({ customStyle });
+//console.log({ customStyle});
 function Headings() {
   return (
     <h1 className="heading" style={customStyle}>
