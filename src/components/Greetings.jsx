@@ -1,14 +1,11 @@
-import React from "react";
-import Time from "./Time";
+import currentTime from "./Time";
 
 let greetings;
 
-const time = <Time />;
-
 function Greetings() {
-  if (time < 12) {
+  if (currentTime < 12) {
     greetings = "Good Morning";
-  } else if (time < 18) {
+  } else if (currentTime < 18) {
     greetings = "Good Afternoon";
   } else {
     greetings = "Good Night";

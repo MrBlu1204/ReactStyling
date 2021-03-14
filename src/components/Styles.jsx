@@ -1,5 +1,15 @@
-import React from "react";
+import currentTime from "./Time";
 
-let color;
+const customStyle = {
+  color: ""
+};
 
-export default Styles;
+if (currentTime < 12) {
+  customStyle.color = "red";
+} else if (currentTime < 18) {
+  customStyle.color = "green";
+} else {
+  customStyle.color = "blue";
+}
+
+export default customStyle;

@@ -1,7 +1,4 @@
-function Time() {
-  const date = new Date();
-  const currentTime = date.getHours();
-  return currentTime;
-}
+const date = new Date();
+const currentTime = date.getHours();
 
-export default Time;
+export default currentTime;
